@@ -1,0 +1,41 @@
+\documentclass[12pt]{extarticle}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[a4paper, left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+
+\title{Избранные произведения}
+\singlespacing
+\parindent=1.25cm
+
+\titleformat{\section}[block]
+{\centering\bfseries}
+{}{0ex}{}
+\titlespacing{\section}
+{0cm}{1ex}{1ex}
+
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\textbf{ДАНИИЛ ХАРМС}}
+\end{center}
+
+\vspace{0.7cm}
+
+\section{СЧИТАЛКА}
+\input{schitalka}
+
+\begin{center}
+* * *
+\end{center}
+
+\section{ВОСПОМИНАНИЯ ОДНОГО \\ МУДРОГО СТАРИКА}
+\vspace{1cm}
+\input{starik}
+
+\end{document}
