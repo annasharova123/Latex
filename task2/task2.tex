@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+
+\begin{document}
+\section*{Вариант 11}
+
+В качестве примера рассмотрим систему угловой стабилизации реактивного снаряда, дополненную корректирующим устройством
+\vspace{-0.25em}
+\begin{gather}
+\tau_0\dot{\beta}_c + \beta_c = -\tau_0(\dot{\beta}_1 + \dot{\beta}_2), \quad
+\tau_0\dot{\alpha}_c + \alpha_c = -\tau_0(\dot{\alpha}_1 + \dot{\alpha}_2), \nonumber\\
+\tau_4^2\ddot{\beta} + 2\xi_4\dot{\beta} + \beta = \tau_3^2\ddot{\beta}_c + 2\xi_3\dot{\beta}_c + \beta_c, \quad
+\tau_4^2\ddot{\alpha} + 2\xi_4\dot{\alpha} + \alpha = \tau_3^2\ddot{\alpha}_c + 2\xi_3\dot{\alpha}_c + \alpha_c, \nonumber\\
+m_1\ddot{x}_0 - b\beta_1 = N_{x_1} + P_{x_1}, \quad
+m_1\ddot{y}_0 + b\alpha_1 = N_{y_1} + P_{y_1}, \quad
+J_1\ddot{\beta}_1 = L_{y_1} + \xi_1 N_{x_1}, \nonumber\\
+J_1\ddot{\alpha}_1 = L_{x_1} - \xi_1 N_{y_1}, \quad
+J_2(\ddot{\beta}_1 + \ddot{\beta}_2) = L_{y_2} - \xi_2 N_{x_2}, \quad
+J_2(\ddot{\alpha}_1 + \ddot{\alpha}_2) = L_{x_2} + \xi_2 N_{y_2}, \label{eq:1}\\
+m_2[\ddot{x}_0 + \ddot{x}_1 + (1 + \xi_1 + \xi_2)\ddot{\beta}_1] = N_{x_2} + m_2 a_z \beta_2 + P_{x_2}, \nonumber\\
+P_{x_2} = n[\beta(t - \tau)\cos(\Omega\tau - \theta) + \alpha(t - \tau)\sin(\Omega\tau - \theta)], \nonumber\\
+\ddot{u}_x + u_x'''' + \gamma\dot{u}_x'''' + \gamma\Omega u_y'''' + a_z[(m_2 + 1 - z)u_x']' = -\ddot{x}_0 - (z + \xi_1)\ddot{\beta}_1 \nonumber
+\end{gather}
+при нулевых начальных условиях. Здесь $()' = \partial()/\partial x$, точкой сверху обозначено дифференцирование по времени $t$
+
+\end{document}
